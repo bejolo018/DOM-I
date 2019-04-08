@@ -42,7 +42,28 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let cta = document.getElementById("cta")
-cta.setAttribute()
+cta.setAttribute('src', siteContent["cta"]["img-src"])
 
 let middleimg = document.getElementsById("middleimg");
-middleimg.setAttribute()
+middleimg.setAttribute('src', siteContent["middle-img"]["img-src"])
+
+const navText = document.querySelectorAll('a')
+navText.textContent = 'aosduinasouidnasodin'
+
+const mainText = document.getElementById('cta-text')
+mainText.textContent = 'aosdinasodinasdoisandoasidn'
+
+const buttonText = document.querySelector('button')
+buttonText.textContent = 'Get Started'
+
+const topText = document.querySelector('top-content')
+topText.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+const bottomText = document.querySelector('bottom-content')
+bottomText.textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+const contactText = document.querySelector('contact')
+contactText.textContent = '123 Way 456 Street Somewhere, USA'
+
+const footerText = document.querySelector('footer')
+footerText.textContent = 'Copyright Great Idea! 2018'
