@@ -52,21 +52,45 @@ middleImg.setAttribute('src', 'img/mid-page-accent.jpg');
 // text js
 const services = document.getElementsByTagName('a')[0];
 services.innerText = ('src', siteContent['nav']['nav-item-1']);
+services.style.color = "green";
+
 
 const product = document.getElementsByTagName('a')[1];
 product.innerText = ('src', siteContent['nav']['nav-item-2']);
+product.style.color = "green";
 
 const vision = document.getElementsByTagName('a')[2];
 vision.innerText = ('src', siteContent['nav']['nav-item-3']);
+vision.style.color = "green";
 
 const features = document.getElementsByTagName('a')[3];
 features.innerText = ('src', siteContent['nav']['nav-item-4']);
+features.style.color = "green";
 
 const about = document.getElementsByTagName('a')[4];
 about.innerText = ('src', siteContent['nav']['nav-item-5']);
+about.style.color = "green";
 
 const contact = document.getElementsByTagName('a')[5];
 contact.innerText = ('src', siteContent['nav']['nav-item-6']);
+contact.style.color = "green";
+
+//append
+const newNav = document.createElement('a');
+const newNavText = document.createTextNode('Appended');
+newNav.appendChild(newNavText);
+contact.appendChild(newNav);
+newNav.style.marginLeft = "5px";
+newNav.style.color = "green";
+//append
+
+const preNav = document.createElement('a');
+const preNavText = document.createTextNode('Prepended');
+preNav.appendChild(preNavText);
+services.prepend(preNav);
+preNav.style.marginRight = "5px";
+preNav.style.color = "green";
+
 
 const headerOne = document.getElementsByTagName('h1')[0];
 headerOne.innerText = siteContent['cta']['h1'];
